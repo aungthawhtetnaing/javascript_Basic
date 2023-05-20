@@ -2,47 +2,57 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>homework</title>
 </head>
 <body>
+<h2>hello world</h2>
+<a href="#" style="color:blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo at est explicabo aspernatur praesentium, doloremque tempora dolore dicta earum a cum, deleniti quasi perferendis consequatur natus pariatur? Alias, recusandae dolore!</a>
+<img src="../image/2.jpg" alt="" style="width:200px;"><br>
+<button onclick="TextAlign()">Text Align</button><br>
+<button onclick="Textcolor()">Text Color</button><br>
+<button onclick="RemoveAttribute()">remove Attribute</button><br>
 	
-<a href="#" title="HTML" id="one" >Programming</a>
-<button onclick="oneclick()">Click</button>
-<script>	
-	function oneclick(){
-		document.getElementById('one').title="JAVASCRIPT";
+	<script>
+	var h2=document.getElementsByTagName('h2');
+	var A=document.getElementsByTagName('a');
+	var img=document.getElementsByTagName('img');
+	function TextAlign(){
+		h2[0].setAttribute('style','text-align:center');
+
+	}
+	function TextColor(){
+		A[0].setAttribute('style','color:red');
+
+	}
+	document.write('<br>');
+	document.write(img[1].getAttribute('src'));
+	document.write('<br>');
+	document.write(img[1].hasAttribute('style'));
+	function RemoveAttribute(){
+	img[1].removeAttribute('style');
+
 	}
 
 
-</script>
-<br>
-<br>
-<script>
-	// for(var i=0;i<=11;i++){
 
-	//   document.write(i);
-	//  	if (i == 10) {
-	//  		break;
-	//  	}
-	//  document.write(',');
-	//  }
-	//  
 	
-	 var i=0;
-	 while(i<10)
-	 {
-	 	i++;
-	 	if(i<10){
-	 		document.write(i+',');
-	 	}else{
-	 		document.write(i);
-	 	}
-	 }
+
+		
+	</script>
+	<h1 id="abc"><i>hello world</i></h1>
+	<img src="../image/10.jpg" alt="photo'a'" name="photo'a'" width="200px" height="200px;"><br>
+	<script>
+		var a=document.getElementById('abc');
+		document.write(a.innerHTML);
+		document.write('<br>');
+		document.write(a.textContent);
+		document.write('<br>');
+		var b=document.getElementsByTagName('img');
+		document.write(b[0].attributes[1].name);
+		document.write('<br>');
+		document.write(b[0].attributes[1].value);
+		
+	</script>
 	
-</script>
-
-
-
 </body>
 </html>

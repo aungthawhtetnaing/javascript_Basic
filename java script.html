@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+</head>
+<body>
+	<h1 id=clock></h1>
+	<script>
+		// document.write(Number.MAX_VALUE);
+		// document.write('<br>');
+		// document.write(Number.MIN_VALUE);
+		// document.write('<br>');
+		// var a=2.4567345;
+		// document.write(a.toExponential(3));
+		// document.write('<br>');
+		// document.write(a.toPrecision(3));
+		// document.write('<br>');
+		// document.write(a.tofix(3));
+		// document.write('<br>');
+		// document.write(a.toString(2));
+		// document.write('<br>');
+		// document.write(a.tostring(8));
+		// document.write('<br>');
+		// document.write(a.tostring(16));
+		// document.write('<br>');
+		// document.write(parseInt(a));
+		// document.write('<br>');
+		// document.write(parsefloat(a));
+		// document.write('<br>');
+		// var b=true;
+		// document.write(number(b));
+			// document.write(Math.random());
+			// document.write('<br>');
+			// document.write(Math.min('5','12','23','45','15','65',));
+			// document.write('<br>');
+			// document.write(Math.max('5','12','23','45','15','65',));
+			// document.write(Math.round(4.2789));
+			// document.write('<br>');
+			// document.write(Math.round(4.5789));
+			// document.write('<br>');
+			// document.write(Math.ceil(4.2789));
+			// document.write('<br>');
+			// document.write(Math.floor(4.2789));
+			// document.write('<br>');
+			// document.write(Math.abs(4.2789));
+			// document.write('<br>');
+			// document.write(Math.abs(-4.2789));
+			// document.write('<br>');
+			// document.write(Math.floor(Math.random()*10));
+			// document.write('<br>');
+			   // var date=new Date();
+			   // document.write(date);document.write('<br>');
+
+			   //  var nameday=date.getDay();
+			   // document.write(nameday);document.write('<br>');
+
+			   //  var numday=date.getDate();
+			   // document.write( numday);document.write('<br>');
+
+			   //  var month=date.getMonth();
+			   // document.write(month);document.write('<br>');
+			   //   var year=date.getFullYear();
+			   // document.write(year);document.write('<br>');
+			   // date.getHours();
+			   //  date.getMinutes();
+			   //   date.getSeconds();
+			   //    date.getMilliseconds();
+			      // var a=['mg mg','aung aung','htun htun','uu','ko ko'];
+
+			      // a[2]='hello';
+			      // document.write(a);document.write('<br>');
+
+			      //  a[a.length]='hi';
+			      // document.write(a);document.write('<br>');
+
+			      // document.write(delete a[a.length-1]);document.write('<br>');
+			      // var b;
+			      // for(b in a){
+			      // 	document.write(a[b]+'/');
+			      // }
+			      // document.write('<br>');
+			      // document.write(a.push('arrayPush'));document.write('<br>');
+			      // document.write(a);document.write('<br>');
+			      //  document.write(a.pop('arrayPop'));document.write('<br>');
+			      // document.write(a);document.write('<br>');
+			      //  document.write(a.shift('arrayShift'));document.write('<br>');
+			      // document.write(a);document.write('<br>');
+			      //  document.write(a.unshift('arrayUnshift'));document.write('<br>');
+			      // document.write(a);document.write('<br>');
+			       // var a=['mg mg','aung aung','htun htun','uu','ko ko'];
+			       // var b=['2','6','8','10','14','20'];
+			       // document.write(a.valueOf());document.write('<br>');
+			       //   document.write(a.join('/'));document.write('<br>');
+			       //     document.write(a.splice(2,4));document.write('<br>');
+			       //       document.write(a.splice(1,1,'hello','hi'));document.write('<br>');
+
+			             // document.write(a.sort());document.write('<br>');
+			             // document.write(b.sort());document.write('<br>');
+			             // document.write(a.reverse());document.write('<br>');
+			             // document.write(b.reverse());document.write('<br>');
+			             // document.write(a.slice(2,7));document.write('<br>');
+			             // function display(){
+			             // 	document.write('I am function');
+			             // }
+			               // display();
+			               // setInterval(display,1000);
+			               // setTimeout(display,1000);
+			               // var stop=setInterval(display,1000);
+			               // clearInterval(stop);
+		               function showtime(){
+		               	var date=new Date();
+		               	var hour=date.getHours();
+		               	var minute=date.getMinutes();
+		               	var second=date.getSeconds();
+		               			var ampm;
+		               			if(hour>=12){
+		               				ampm='pm';
+		               			}else{
+		               				ampm='am';
+		               			}
+		               			var show=hour + ':' + minute + ':' + second + ' ' + ampm;
+		               			document.getElementById('clock').innerHTML=show;
+		               }
+		               showtime();
+		               setInterval(showtime,1000);
+		                  
+
+
+
+
+
+
+
+
+
+			   
+
+			 
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

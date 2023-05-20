@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#org{
+			height: 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<p id="org">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laboriosam accusamus incidunt, quisquam eveniet dignissimos necessitatibus, minima earum, cum soluta dolore impedit eius nam veniam. Laudantium alias praesentium illum, nihil. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magnam voluptatum debitis, rerum assumenda reprehenderit, officiis modi, voluptatibus ad necessitatibus nam dolor quam id placeat quisquam maiores delectus! Vero, corrupti! ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iure, quam, voluptas excepturi labore corporis minus tempore inventore. Non veritatis quasi officia quibusdam, saepe hic suscipit iusto? Sapiente ex, ab.</p>
+	<p id="show"></p>
+	<script>
+		var org=document.getElementById('org').innerHTML;
+		var int=0;
+		function typewriter(){
+			var show=document.getElementById('show');
+			show.innerHTML+=org[int];
+			int++;
+			if(int==org.length){
+				clearInterval(stop);
+			}
+		}
+		var stop=setInterval(typewriter,2);
+	</script>
+	
+</body>
+
+</html>

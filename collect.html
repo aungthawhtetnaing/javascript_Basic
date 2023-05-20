@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	h1,p{
+			height: 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="aa">hello world</h1>
+	<div>
+		<h1 class="aa">hello world</h1>
+		<h1>hello world</h1>
+		<p class="aa">this is a paragraph.</p>
+
+	</div>
+	<h1>hello <i>world</i></h1>
+	<script>
+		var aa=document.getElementById('aa');
+		document.write(aa);document.write('<br>');
+		document.write(aa[0]);document.write('<br>');
+		document.write(aa[1]);document.write('<br>');
+
+		var aa1=document.getElementsByClassName('aa');
+		document.write(aa1);document.write('<br>');
+		document.write(aa1[0]);document.write('<br>');
+		document.write(aa1[1]);document.write('<br>');
+
+		var aa2=document.querySelector('aa');
+		document.write(aa2);document.write('<br>');
+		
+		var aa3=document.querySelectorAll('aa');
+		document.write(aa3);document.write('<br>');
+		
+
+
+
+
+
+	</script>
+	
+</body>
+</html>
